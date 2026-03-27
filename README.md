@@ -1,34 +1,20 @@
 # Wind Dynamics Experiment
-## Cross-Domain Validation of the Stuart-Landau UKF Framework
 
 [![R](https://img.shields.io/badge/R-≥4.2-276DC3?logo=r&logoColor=white)](https://www.r-project.org/)
 [![Python](https://img.shields.io/badge/Python-≥3.9-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Academic_Use-lightgrey)]()
 [![Status](https://img.shields.io/badge/Status-Pilot_Complete-brightgreen)]()
 
-### Overview
+## Overview
 
 We apply a UKF-based linearized harmonic oscillator (LHO) estimation pipeline to daily wind speed obser-
 vations from two meteorological stations in the Sürmeli Depression of eastern Türkiye, spanning nine years (2014-2022,
 3287 daily records). The analysis framework evolved through a principled sequence of modeling decisions: an ini-
 tial Hopf bifurcation approach exhibited systematic frequency collapse to the analysis band boundary, motivating the
 adoption of a linearized harmonic oscillator model whose second-order damped oscillation physics matches the driven
-dynamics of synoptic weather systems. The LHO natural frequency parameter γ is robustly recovered at each station
-(convergence in 1-4 iterations, insensitive to initial conditions), yielding physically meaningful oscillation periods of 2.3-
-2.9 days that independently match the theoretically expected timescales of mid-latitude baroclinic weather systems and
-exhibit seasonal modulation consistent with jetstream variability - winter oscillations are faster (period ≈ 3.0 d) while
-summer oscillations are slower (period ≈ 5.5 d). Inter-station coupling is identifiable under frequency-symmetric condi-
-tions but is confounded with the damping parameter under frequency-asymmetric conditions, a structural property of the
-damped harmonic oscillator model class that persists regardless of sample size or signal characteristics. A within-station
-positive control (coupling between co-located average and maximum wind speed signals) converges cleanly, confirming
-the estimation pipeline recovers coupling when the physical interaction matches the model’s diffusive coupling assump-
-tion. These findings demonstrate that oscillator-based parameter estimation can extract physically meaningful dynamical
-summaries from geophysical time series, while establishing the damping-coupling confound as an intrinsic identifiability
-boundary of the model class with implications for any application of coupled damped oscillator models to empirical data.
-Keywords: Unscented Kalman Filter; Linearized Harmonic Oscillator; Parameter Estimation; Coupled Oscillators; Syn-
-optic Wind Dynamics; Coupling Identifiability; Sürmeli Depression; Iğdır Basin
+dynamics of synoptic weather systems.
 
-### Project Structure
+## Project Structure
 
 ```
 wind_experiment/
@@ -48,7 +34,7 @@ wind_experiment/
 ├── logs/                      ← Generated: master_log.csv, session_log.txt, etc.
 ├── plots/                     ← Generated: figures
 └── wind_experiment.ipynb      ← Main experiment notebook (R kernel)
-
+```
 **Only domain-specific configuration changed:**
 
 | Parameter | BOLD | Wind  | Reason |
@@ -59,16 +45,20 @@ wind_experiment/
 | `OM_MAX` | 1.257 rad/TR | 2.094 rad/day | 3-day synoptic |
 | `T_obs` | ~260 TRs | ~3287 days | Record length |
 
-### Hypotheses
+## Hypotheses
 
-- **H1**: Single-station regime characterisation (subcritical vs. supercritical)
-- **H2**: Seasonal regime transitions in bifurcation parameter
-- **H3**: Inter-station coupling identifiability via paired SL (the critical test)
-- **H4**: Coupled pendulum/LHO recovery (failed on BOLD, expected to succeed on wind)
-- **H5**: Missing data robustness (Iğdır 2014-2016 gap)
-- **H6**: Yearly stationarity and long-term drift
+- H1 & Single-station natural frequency & LHO single & $\gamma$ \\
+- H2 & Inter-station coupling & LHO two-stage & $k$ \\
+- H3 & Seasonal regime transitions & LHO single & $\gamma$ per season \\
+- H4 & Yearly stationarity & LHO single & $\gamma$ per year \\
+- H5 & Damping sensitivity & LHO (varied $\zeta$) & $\gamma$ and $k$ vs $\zeta$ \\
+- H6 & Model comparison (LHO vs pendulum) & Both & $\Delta\chi^2$ \\
+- H7 & Cross-domain SL comparison & SL fixed-$\omega$ & $a$ \\
+- Exp~A & Gamma ceiling fix ($\gamma_{\max}$: $5 \to 20$) & LHO both stages & $\gamma$, $k$ \\
+- Exp~B & Cross-signal robustness & LHO two-stage & $k$ per pair \\
+- Exp~C & Full zeta sensitivity (new $\gamma_{\max}$) & LHO both stages & $\gamma$, $k$ vs $\zeta$ \\
 
-### Dependencies
+## Dependencies
 
 R packages: `pracma`, `MASS`, `Matrix` (installed automatically by the notebook)
 
