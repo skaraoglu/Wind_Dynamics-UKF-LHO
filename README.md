@@ -7,12 +7,8 @@
 
 ## Overview
 
-We apply a UKF-based linearized harmonic oscillator (LHO) estimation pipeline to daily wind speed obser-
-vations from two meteorological stations in the Sürmeli Depression of eastern Türkiye, spanning nine years (2014-2022,
-3287 daily records). The analysis framework evolved through a principled sequence of modeling decisions: an ini-
-tial Hopf bifurcation approach exhibited systematic frequency collapse to the analysis band boundary, motivating the
-adoption of a linearized harmonic oscillator model whose second-order damped oscillation physics matches the driven
-dynamics of synoptic weather systems.
+We apply a UKF-based linearized harmonic oscillator (LHO) estimation pipeline to daily wind speed observations from two meteorological stations in the Sürmeli Depression of eastern Türkiye, spanning nine years (2014-2022,
+3287 daily records). The analysis framework evolved through a principled sequence of modeling decisions: an initial Hopf bifurcation approach exhibited systematic frequency collapse to the analysis band boundary, motivating the adoption of a linearized harmonic oscillator model whose second-order damped oscillation physics matches the driven dynamics of synoptic weather systems.
 
 ## Project Structure
 
@@ -72,7 +68,7 @@ If you use this pipeline or build on this work, please cite:
 
 <div align="center">
 
-*Built with the [Stuart-Landau](https://en.wikipedia.org/wiki/Stuart%E2%80%93Landau_equation) normal form · [Unscented Kalman Filter](https://github.com/insilico/UKF) · [UKF-MDD](https://github.com/skaraoglu/UKF-MDD)
+LHO derived from a [Coupled Oscillator Model](https://doi.org/10.5074/t.2018.002) · [Stuart-Landau](https://en.wikipedia.org/wiki/Stuart%E2%80%93Landau_equation) normal form · [Unscented Kalman Filter](https://github.com/insilico/UKF) · [UKF-MDD](https://github.com/skaraoglu/UKF-MDD)
 
 </div>
 
