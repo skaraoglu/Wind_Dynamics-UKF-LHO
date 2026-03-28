@@ -15,21 +15,22 @@ We apply a UKF-based linearized harmonic oscillator (LHO) estimation pipeline to
 ```
 wind_experiment/
 ├── R/
-│   ├── constants.R            ← UKF numerical constants (domain-independent)
-│   ├── ukf_engine.R           ← UKF core: propagate_model, UKF_dT, UKF_blend
-│   ├── sl_models.R            ← SL models: make_sl_single, make_sl_paired_fixed_aw,
-│   │                            hilbert_analytic, omega_from_phase
-│   ├── models.R               ← Coupled oscillator models: LHO, gLk, abk
-│   ├── optim.R                ← iterative_param_optim, optim_params
-│   │                               These 5 files are exact with UKF-MDD.
-│   ├── wind_config.R          ← NEW: wind-specific SL_BOUNDS, timing, bounds
-│   ├── wind_preprocessing.R   ← NEW: wind data loading, cleaning, Hilbert
-│   └── wind_logging.R         ← NEW: per-fit CSV logging, session log
+│   ├── constants.R                  ← UKF numerical constants (domain-independent)
+│   ├── ukf_engine.R                 ← UKF core: propagate_model, UKF_dT, UKF_blend
+│   ├── sl_models.R                  ← SL models: make_sl_single, make_sl_paired_fixed_aw,
+│   │                                  hilbert_analytic, omega_from_phase
+│   ├── models.R                     ← Coupled oscillator models: LHO, gLk, abk
+│   ├── optim.R                      ← iterative_param_optim, optim_params
+│   │                                   These 5 files are exact with UKF-MDD.
+│   ├── wind_config.R                ← NEW: wind-specific SL_BOUNDS, timing, bounds
+│   ├── wind_preprocessing.R         ← NEW: wind data loading, cleaning, Hilbert
+│   └── wind_logging.R               ← NEW: per-fit CSV logging, session log
 ├── data/
-│   └── wind.csv               ← USER: place wind data here
-├── logs/                      ← Generated: master_log.csv, session_log.txt, etc.
-├── plots/                     ← Generated: figures
-└── wind_experiment.ipynb      ← Main experiment notebook (R kernel)
+│   └── wind.csv                     ← USER: place wind data here
+├── logs/                            ← Generated: master_log.csv, session_log.txt, etc.
+├── plots/                           ← Generated: figures
+└── wind_experiment.ipynb            ← Main experiment notebook (R kernel)
+└── wind_experiment_supplement.ipynb ← Supplement experiment notebook (R kernel)
 ```
 **Only domain-specific configuration changed:**
 
