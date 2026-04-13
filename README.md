@@ -1,10 +1,11 @@
+<div align="center">
 # Wind Dynamics Experiment
 
 [![R](https://img.shields.io/badge/R-≥4.2-276DC3?logo=r&logoColor=white)](https://www.r-project.org/)
 [![Python](https://img.shields.io/badge/Python-≥3.9-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Academic_Use-lightgrey)]()
 [![Status](https://img.shields.io/badge/Status-Pilot_Complete-brightgreen)]()
-
+</div>
 ## Overview
 
 We apply a UKF-based linearized harmonic oscillator (LHO) estimation pipeline to daily wind speed observations from two meteorological stations in the Sürmeli Depression of eastern Türkiye, spanning nine years (2014-2022,
