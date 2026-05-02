@@ -61,7 +61,7 @@ wind_experiment/
 - H4 & Yearly stationarity & LHO single & $\gamma$ per year 
 - H5 & Damping sensitivity & LHO (varied $\zeta$) & $\gamma$ and $k$ vs $\zeta$ 
 - H6 & Model comparison (LHO vs pendulum) & Both & $\Delta\chi^2$ 
-- H7 & Cross-domain SL comparison & SL fixed-$\omega$ & $a$ 
+- H7 & Cross-domain SL comparison & SL fixed - $\omega$ & $a$ 
 - Exp~A & Gamma ceiling fix ($\gamma_{\max}$: $5 \to 20$) & LHO both stages & $\gamma$, $k$ 
 - Exp~B & Cross-signal robustness & LHO two-stage & $k$ per pair 
 - Exp~C & Full zeta sensitivity (new $\gamma_{\max}$) & LHO both stages & $\gamma$, $k$ vs $\zeta$ 
