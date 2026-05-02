@@ -1,5 +1,11 @@
 <div align="center">
-  
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero_wind_merged.png">
+  <img alt="SEITRNet — Network-based SEITR epidemic modeling in R"
+       src="assets/hero_wind_merged.png" width="900">
+</picture>
+
 # Wind Dynamics Experiment
 
 [![R](https://img.shields.io/badge/R-≥4.2-276DC3?logo=r&logoColor=white)](https://www.r-project.org/)
