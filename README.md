@@ -32,7 +32,7 @@ wind_experiment/
 │   │                                  hilbert_analytic, omega_from_phase
 │   ├── models.R                     ← Coupled oscillator models: LHO, gLk, abk
 │   ├── optim.R                      ← iterative_param_optim, optim_params
-│   │                                   These 5 files are exact with [SL-UKF_Neural_Criticality_MDD](https://github.com/skaraoglu/SL-UKF_Neural_Criticality_MDD).
+│   │                                   These 5 files are exact with SL-UKF_Neural_Criticality_MDD.
 │   ├── wind_config.R                ← NEW: wind-specific SL_BOUNDS, timing, bounds
 │   ├── wind_preprocessing.R         ← NEW: wind data loading, cleaning, Hilbert
 │   └── wind_logging.R               ← NEW: per-fit CSV logging, session log
