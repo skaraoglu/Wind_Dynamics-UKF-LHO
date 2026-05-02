@@ -40,7 +40,7 @@ wind_experiment/
 │   └── wind.csv                     ← USER: place wind data here
 ├── logs/                            ← Generated: master_log.csv, session_log.txt, etc.
 ├── plots/                           ← Generated: figures
-└── wind_experiment.ipynb            ← Main experiment notebook (R kernel)
+├── wind_experiment.ipynb            ← Main experiment notebook (R kernel)
 └── wind_experiment_supplement.ipynb ← Supplement experiment notebook (R kernel)
 ```
 **Only domain-specific configuration changed:**
@@ -80,7 +80,7 @@ If you use this pipeline or build on this work, please cite:
 
 <div align="center">
 
-LHO derived from a [Coupled Oscillator Model](https://doi.org/10.5074/t.2018.002) · [Stuart-Landau](https://en.wikipedia.org/wiki/Stuart%E2%80%93Landau_equation) normal form · [Unscented Kalman Filter](https://github.com/insilico/UKF) · [UKF-MDD](https://github.com/skaraoglu/UKF-MDD)
+LHO derived from a [Coupled Oscillator Model](https://doi.org/10.5074/t.2018.002) · [Stuart-Landau](https://en.wikipedia.org/wiki/Stuart%E2%80%93Landau_equation) normal form · [Unscented Kalman Filter](https://github.com/insilico/UKF) · [SL-UKF_Neural_Criticality_MDD](https://github.com/skaraoglu/SL-UKF_Neural_Criticality_MDD) · [SL-UKF_Neural_Criticality_MDDvsHC](https://github.com/skaraoglu/SL-UKF_Neural_Criticality_MDDvsHC)
 
 </div>
 
