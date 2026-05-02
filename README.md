@@ -55,16 +55,16 @@ wind_experiment/
 
 ## Hypotheses
 
-- H1 & Single-station natural frequency & LHO single & $\gamma$ \\
-- H2 & Inter-station coupling & LHO two-stage & $k$ \\
-- H3 & Seasonal regime transitions & LHO single & $\gamma$ per season \\
-- H4 & Yearly stationarity & LHO single & $\gamma$ per year \\
-- H5 & Damping sensitivity & LHO (varied $\zeta$) & $\gamma$ and $k$ vs $\zeta$ \\
-- H6 & Model comparison (LHO vs pendulum) & Both & $\Delta\chi^2$ \\
-- H7 & Cross-domain SL comparison & SL fixed-$\omega$ & $a$ \\
-- Exp~A & Gamma ceiling fix ($\gamma_{\max}$: $5 \to 20$) & LHO both stages & $\gamma$, $k$ \\
-- Exp~B & Cross-signal robustness & LHO two-stage & $k$ per pair \\
-- Exp~C & Full zeta sensitivity (new $\gamma_{\max}$) & LHO both stages & $\gamma$, $k$ vs $\zeta$ \\
+- H1 & Single-station natural frequency & LHO single & $\gamma$ 
+- H2 & Inter-station coupling & LHO two-stage & $k$ 
+- H3 & Seasonal regime transitions & LHO single & $\gamma$ per season 
+- H4 & Yearly stationarity & LHO single & $\gamma$ per year 
+- H5 & Damping sensitivity & LHO (varied $\zeta$) & $\gamma$ and $k$ vs $\zeta$ 
+- H6 & Model comparison (LHO vs pendulum) & Both & $\Delta\chi^2$ 
+- H7 & Cross-domain SL comparison & SL fixed-$\omega$ & $a$ 
+- Exp~A & Gamma ceiling fix ($\gamma_{\max}$: $5 \to 20$) & LHO both stages & $\gamma$, $k$ 
+- Exp~B & Cross-signal robustness & LHO two-stage & $k$ per pair 
+- Exp~C & Full zeta sensitivity (new $\gamma_{\max}$) & LHO both stages & $\gamma$, $k$ vs $\zeta$ 
 
 ## Dependencies
 
